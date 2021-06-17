@@ -30,6 +30,7 @@ jobs:
         run: |
           yarn
           sudo apt install -y $(cat deps.txt)
+          mkdir screenshots
 
       - name: Start Treasure Hunt
         run: yarn start ${{ github.event.inputs.invite }}
